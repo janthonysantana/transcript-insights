@@ -12,4 +12,5 @@ st.set_page_config(
 )
 
 if __name__ == "__main__":
+    st.set_option('server.enableCORS', True) 
     show_page()
