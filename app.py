@@ -3,6 +3,7 @@ import streamlit as st
 
 from pages.Main import show_page
 
+
 sys.path.append(".")
 
 st.set_page_config(
