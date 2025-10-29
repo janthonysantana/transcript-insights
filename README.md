@@ -39,6 +39,7 @@ showSidebarNavigation = false
 
 ## Tech Stack
 
+- Python 3.12
 - Streamlit
 - Azure OpenAI (GPT-4o-mini)
 - Pydantic for structured outputs
