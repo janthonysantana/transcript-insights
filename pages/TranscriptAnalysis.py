@@ -79,9 +79,11 @@ def TranscriptAnalysis():
         with st.spinner("Analyzing transcript..."):
             insights = generate_summary(bytes_data.decode("utf-8"))
             st.session_state.insights = insights
-            display_insights(insights)
 
+    # Display insights if they exist (regardless of button click)
     if "insights" in st.session_state:
+        display_insights(st.session_state.insights)
+        
         st.download_button("Export", 
                            st.session_state.insights, 
                            file_name="insights.json",
